@@ -1,0 +1,34 @@
+name: SBOM Compliance CI
+
+on:
+  push:
+    branches: [ main ]
+  pull_request:
+    branches: [ main ]
+
+jobs:
+  compliance-check:
+    name: SBOM Compliance Check
+    runs-on: ubuntu-latest
+    
+    steps:
+      - name: Checkout Repository
+        uses: actions/checkout@v3
+      
+      - name: Set up Python
+        uses: actions/setup-python@v4
+        with:
+          python-version: '3.10'
+      
+      - name: Install Dependencies
+        run: |
+          make install
+      
+      - name: Run Non-Compliant Check
+        continue-on-error: true
+        run: |
+          make run
+      
+      - name: Run Compliant Check
+        run: |
+          make run2

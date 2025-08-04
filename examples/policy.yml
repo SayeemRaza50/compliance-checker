@@ -1,0 +1,22 @@
+# SPDX Compliance Policy Configuration. This file defines the compliance rules for SBOM validation
+
+# List of licenses that are not allowed in any package
+disallowed-licenses:
+  - MPL-1.0
+  - GPL-3.0
+  - AGPL-3.0
+
+# Fields that must not contain NOASSERTION values. These are critical fields that require explicit values
+no-assertion-values:
+  - license_concluded
+  - supplier
+
+# Whether copyright text is mandatory for all packages
+required-copyright: true
+
+# List of approved supplier organizations. Only packages from these suppliers will pass validation
+approved-suppliers:
+  - "Acme Corporation"
+  - "Widget Inc"
+  - "Example Company"
+  - "OpenSource Foundation"

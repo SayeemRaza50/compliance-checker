@@ -1,0 +1,76 @@
+{
+  "spdxVersion": "SPDX-2.3",
+  "dataLicense": "CC0-1.0",
+  "SPDXID": "SPDXRef-DOCUMENT",
+  "name": "Application SBOM",
+  "documentNamespace": "https://github.com/ SayeemRaza50/sbom/app-v1.0",
+  "creationInfo": {
+    "created": "2025-08-03T10:00:00Z",
+    "creators": [
+      "Tool: SPDX-Tools-2.3"
+    ],
+    "licenseListVersion": "3.21"
+  },
+  "packages": [
+    {
+      "SPDXID": "SPDXRef-Package-react",
+      "name": "react",
+      "downloadLocation": "https://github.com/facebook/react",
+      "filesAnalyzed": false,
+      "licenseConcluded": "MIT",
+      "licenseDeclared": "MIT",
+      "copyrightText": "Copyright (c) Meta Platforms, Inc.",
+      "supplier": "Organization: Meta Platforms",
+      "versionInfo": "18.2.0",
+      "description": "A declarative, efficient, and flexible JavaScript library for building user interfaces.",
+      "homepage": "https://react.dev",
+      "originator": "",
+      "externalRefs": []
+    },
+    {
+      "SPDXID": "SPDXRef-Package-tensorflow",
+      "name": "tensorflow",
+      "downloadLocation": "https://github.com/tensorflow/tensorflow",
+      "filesAnalyzed": false,
+      "licenseConcluded": "NOASSERTION",
+      "licenseDeclared": "Apache-2.0",
+      "copyrightText": "Copyright 2019 The TensorFlow Authors",
+      "supplier": "Organization: Google LLC",
+      "versionInfo": "2.13.0",
+      "description": "An open-source machine learning library for research and production.",
+      "homepage": "https://www.tensorflow.org/",
+      "originator": "",
+      "externalRefs": []
+    },
+    {
+      "SPDXID": "SPDXRef-Package-mysql-connector",
+      "name": "mysql-connector",
+      "downloadLocation": "https://downloads.mysql.com/archives/connector/",
+      "filesAnalyzed": false,
+      "licenseConcluded": "GPL-3.0",
+      "licenseDeclared": "GPL-3.0",
+      "copyrightText": "Copyright (c) 2023, Oracle",
+      "supplier": "Organization: Oracle Corporation",
+      "versionInfo": "8.1.0",
+      "description": "MySQL database connector for Python.",
+      "homepage": "https://dev.mysql.com/downloads/connector/",
+      "originator": "",
+      "externalRefs": []
+    },
+    {
+      "SPDXID": "SPDXRef-Package-custom-auth",
+      "name": "custom-auth-lib",
+      "downloadLocation": "NOASSERTION",
+      "filesAnalyzed": false,
+      "licenseConcluded": "Apache-2.0",
+      "licenseDeclared": "Apache-2.0",
+      "copyrightText": "",
+      "supplier": "NOASSERTION",
+      "versionInfo": "1.0.0",
+      "description": "Custom internal authentication library.",
+      "homepage": "",
+      "originator": "",
+      "externalRefs": []
+    }
+  ]
+}

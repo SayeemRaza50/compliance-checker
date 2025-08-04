@@ -1,0 +1,77 @@
+{
+    "spdxVersion": "SPDX-2.3",
+    "dataLicense": "CC0-1.0",
+    "SPDXID": "SPDXRef-DOCUMENT",
+    "name": "Application SBOM",
+    "documentNamespace": "https://github.com/ SayeemRaza50/sbom/clean-v1.0",
+    "creationInfo": {
+      "created": "2025-08-03T10:00:00Z",
+      "creators": [
+        "Tool: SPDX-Tools-2.3"
+      ],
+      "licenseListVersion": "3.21"
+    },
+    "packages": [
+      {
+        "SPDXID": "SPDXRef-Package-clean1",
+        "name": "core-lib",
+        "downloadLocation": "https://acme.com/core-lib",
+        "filesAnalyzed": false,
+        "licenseConcluded": "MIT",
+        "licenseDeclared": "MIT",
+        "copyrightText": "Copyright 2025 Acme Corporation",
+        "supplier": "Organization: Acme Corporation",
+        "versionInfo": "1.0.0",
+        "description": "A core library for applications.",
+        "homepage": "https://acme.com/core-lib",
+        "originator": "",
+        "externalRefs": []
+      },
+      {
+        "SPDXID": "SPDXRef-Package-clean2",
+        "name": "widget-ui",
+        "downloadLocation": "https://widget.com/ui",
+        "filesAnalyzed": false,
+        "licenseConcluded": "Apache-2.0",
+        "licenseDeclared": "Apache-2.0",
+        "copyrightText": "Copyright 2025 Widget Inc",
+        "supplier": "Organization: Widget Inc",
+        "versionInfo": "2.2.1",
+        "description": "A widget-based UI framework.",
+        "homepage": "https://widget.com/ui",
+        "originator": "",
+        "externalRefs": []
+      },
+      {
+        "SPDXID": "SPDXRef-Package-clean3",
+        "name": "example-data-utils",
+        "downloadLocation": "https://example.org/data-utils",
+        "filesAnalyzed": false,
+        "licenseConcluded": "BSD-3-Clause",
+        "licenseDeclared": "BSD-3-Clause",
+        "copyrightText": "Copyright 2025 Example Company",
+        "supplier": "Organization: Example Company",
+        "versionInfo": "3.0.4",
+        "description": "Data utilities package.",
+        "homepage": "https://example.org/data-utils",
+        "originator": "",
+        "externalRefs": []
+      },
+      {
+        "SPDXID": "SPDXRef-Package-clean4",
+        "name": "openlib-math",
+        "downloadLocation": "https://opensourcefoundation.org/openlib-math",
+        "filesAnalyzed": false,
+        "licenseConcluded": "MIT",
+        "licenseDeclared": "MIT",
+        "copyrightText": "Copyright 2025 OpenSource Foundation",
+        "supplier": "Organization: OpenSource Foundation",
+        "versionInfo": "0.8.2",
+        "description": "Open-source math utilities.",
+        "homepage": "https://opensourcefoundation.org/openlib-math",
+        "originator": "",
+        "externalRefs": []
+      }
+    ]
+  }
+  
