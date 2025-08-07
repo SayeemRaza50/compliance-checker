@@ -1,22 +1,71 @@
-# SPDX Compliance Policy Configuration. This file defines the compliance rules for SBOM validation
-
-# List of licenses that are not allowed in any package
 disallowed-licenses:
-  - MPL-1.0
-  - GPL-3.0
-  - AGPL-3.0
+  - "GPL-3.0-only"
+  - "GPL-3.0-or-later" 
+  - "GPL-2.0-only"
+  - "GPL-2.0-or-later"
+  - "LGPL-3.0-only"
+  - "LGPL-2.1-only"
+  
+  - "AGPL-3.0-only"
+  - "AGPL-3.0-or-later"
+  
+  - "MPL-1.0" 
+  - "MPL-1.1"
+  - "MPL-2.0"
+  
+  - "EPL-1.0"
+  - "EPL-2.0"
+  
+  - "CC-BY-NC-4.0"      
+  - "CC-BY-NC-SA-4.0"   
+  - "CC-BY-SA-4.0"      
+  
+  - "LicenseRef-Commercial"
+  - "LicenseRef-Proprietary" 
+  
+  - "SSPL-1.0"          
+  - "BUSL-1.1"         
+  - "Sleepycat"         
+  - "OSL-3.0"           
+  - "EUPL-1.2"         
+  
+  - "GPL-1.0-only"
+  - "LGPL-2.0-only"
+  - "GFDL-1.3-only"     
 
-# Fields that must not contain NOASSERTION values. These are critical fields that require explicit values
+
 no-assertion-values:
-  - license_concluded
-  - supplier
+  - "license_concluded"
+  - "license_declared" 
+  - "supplier"
+  - "copyright_text"
+  - "download_location"
 
-# Whether copyright text is mandatory for all packages
+
 required-copyright: true
 
-# List of approved supplier organizations. Only packages from these suppliers will pass validation
 approved-suppliers:
-  - "Acme Corporation"
-  - "Widget Inc"
-  - "Example Company"
-  - "OpenSource Foundation"
+  - "Apache Software Foundation"
+  - "Eclipse Foundation"
+  - "Linux Foundation"
+  - "OpenJS Foundation"
+  - "Python Software Foundation"
+  - "Mozilla Foundation"
+  
+  - "Google LLC"
+  - "Microsoft Corporation" 
+  - "Amazon.com, Inc."
+  - "Meta Platforms, Inc."
+  - "Oracle Corporation"
+  - "IBM Corporation"
+  - "Red Hat, Inc."
+  
+  - "Cloudflare, Inc."
+  - "GitHub, Inc."
+  - "HashiCorp, Inc."
+  - "Docker, Inc."
+  
+  
+  - "Individual Developer"
+  - "Community Maintainer"
+  - "Open Source Contributor"

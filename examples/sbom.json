@@ -2,14 +2,15 @@
   "spdxVersion": "SPDX-2.3",
   "dataLicense": "CC0-1.0",
   "SPDXID": "SPDXRef-DOCUMENT",
-  "name": "Application SBOM",
-  "documentNamespace": "https://github.com/ SayeemRaza50/sbom/app-v1.0",
+  "name": "Enterprise Web Application SBOM",
+  "documentNamespace": "https://enterprise.example.com/sbom/webapp-v2.1",
   "creationInfo": {
-    "created": "2025-08-03T10:00:00Z",
+    "created": "2025-08-07T10:00:00Z",
     "creators": [
-      "Tool: SPDX-Tools-2.3"
+      "Tool: SPDX-Tools-2.3",
+      "Organization: Enterprise Corp Security Team"
     ],
-    "licenseListVersion": "3.21"
+    "licenseListVersion": "3.24"
   },
   "packages": [
     {
@@ -19,13 +20,58 @@
       "filesAnalyzed": false,
       "licenseConcluded": "MIT",
       "licenseDeclared": "MIT",
-      "copyrightText": "Copyright (c) Meta Platforms, Inc.",
-      "supplier": "Organization: Meta Platforms",
+      "copyrightText": "Copyright (c) Meta Platforms, Inc. and its affiliates.",
+      "supplier": "Organization: Meta Platforms, Inc.",
       "versionInfo": "18.2.0",
-      "description": "A declarative, efficient, and flexible JavaScript library for building user interfaces.",
-      "homepage": "https://react.dev",
-      "originator": "",
-      "externalRefs": []
+      "description": "A declarative, efficient, and flexible JavaScript library for building user interfaces."
+    },
+    {
+      "SPDXID": "SPDXRef-Package-express",
+      "name": "express",
+      "downloadLocation": "https://github.com/expressjs/express",
+      "filesAnalyzed": false,
+      "licenseConcluded": "MIT",
+      "licenseDeclared": "MIT",
+      "copyrightText": "Copyright (c) 2009-2014 TJ Holowaychuk",
+      "supplier": "Organization: OpenJS Foundation",
+      "versionInfo": "4.18.2",
+      "description": "Fast, unopinionated, minimalist web framework for Node.js"
+    },
+    {
+      "SPDXID": "SPDXRef-Package-mysql-connector",
+      "name": "mysql-connector-python",
+      "downloadLocation": "https://dev.mysql.com/downloads/connector/python/",
+      "filesAnalyzed": false,
+      "licenseConcluded": "GPL-2.0-only",
+      "licenseDeclared": "GPL-2.0-only",
+      "copyrightText": "Copyright (c) 2023, Oracle and/or its affiliates.",
+      "supplier": "Organization: Oracle Corporation",
+      "versionInfo": "8.2.0",
+      "description": "Official MySQL driver for Python"
+    },
+    {
+      "SPDXID": "SPDXRef-Package-mongodb-driver",
+      "name": "pymongo",
+      "downloadLocation": "https://github.com/mongodb/mongo-python-driver",
+      "filesAnalyzed": false,
+      "licenseConcluded": "Apache-2.0",
+      "licenseDeclared": "Apache-2.0",
+      "copyrightText": "Copyright 2009-2023 MongoDB, Inc.",
+      "supplier": "Organization: MongoDB, Inc.",
+      "versionInfo": "4.6.0",
+      "description": "Python driver for MongoDB"
+    },
+    {
+      "SPDXID": "SPDXRef-Package-redis-py",
+      "name": "redis",
+      "downloadLocation": "https://github.com/redis/redis-py",
+      "filesAnalyzed": false,
+      "licenseConcluded": "MIT",
+      "licenseDeclared": "MIT", 
+      "copyrightText": "Copyright (c) 2012 Andy McCurdy",
+      "supplier": "Organization: Redis Ltd.",
+      "versionInfo": "5.0.1",
+      "description": "Python client for Redis key-value store"
     },
     {
       "SPDXID": "SPDXRef-Package-tensorflow",
@@ -36,41 +82,176 @@
       "licenseDeclared": "Apache-2.0",
       "copyrightText": "Copyright 2019 The TensorFlow Authors",
       "supplier": "Organization: Google LLC",
-      "versionInfo": "2.13.0",
-      "description": "An open-source machine learning library for research and production.",
-      "homepage": "https://www.tensorflow.org/",
-      "originator": "",
-      "externalRefs": []
+      "versionInfo": "2.15.0",
+      "description": "Open-source machine learning framework"
     },
     {
-      "SPDXID": "SPDXRef-Package-mysql-connector",
-      "name": "mysql-connector",
-      "downloadLocation": "https://downloads.mysql.com/archives/connector/",
+      "SPDXID": "SPDXRef-Package-jquery",
+      "name": "jquery",
+      "downloadLocation": "https://github.com/jquery/jquery", 
       "filesAnalyzed": false,
-      "licenseConcluded": "GPL-3.0",
-      "licenseDeclared": "GPL-3.0",
-      "copyrightText": "Copyright (c) 2023, Oracle",
-      "supplier": "Organization: Oracle Corporation",
-      "versionInfo": "8.1.0",
-      "description": "MySQL database connector for Python.",
-      "homepage": "https://dev.mysql.com/downloads/connector/",
-      "originator": "",
-      "externalRefs": []
+      "licenseConcluded": "MIT",
+      "licenseDeclared": "MIT",
+      "copyrightText": "Copyright OpenJS Foundation and other contributors",
+      "supplier": "Organization: OpenJS Foundation",
+      "versionInfo": "3.7.1",
+      "description": "JavaScript library for DOM manipulation"
     },
     {
-      "SPDXID": "SPDXRef-Package-custom-auth",
-      "name": "custom-auth-lib",
+      "SPDXID": "SPDXRef-Package-bootstrap",
+      "name": "bootstrap",
+      "downloadLocation": "https://github.com/twbs/bootstrap",
+      "filesAnalyzed": false,
+      "licenseConcluded": "MIT",
+      "licenseDeclared": "MIT",
+      "copyrightText": "Copyright (c) 2011-2024 The Bootstrap Authors",
+      "supplier": "Organization: Bootstrap Team",
+      "versionInfo": "5.3.2",
+      "description": "Popular CSS framework for responsive web design"
+    },
+    {
+      "SPDXID": "SPDXRef-Package-gpl-lib",
+      "name": "some-gpl-library",
+      "downloadLocation": "https://gnu.org/software/example/",
+      "filesAnalyzed": false,
+      "licenseConcluded": "GPL-3.0-only",
+      "licenseDeclared": "GPL-3.0-only",
+      "copyrightText": "Copyright (C) 2023 Free Software Foundation, Inc.",
+      "supplier": "Organization: Free Software Foundation",
+      "versionInfo": "2.1.4",
+      "description": "GNU library with copyleft license"
+    },
+    {
+      "SPDXID": "SPDXRef-Package-mozilla-lib",
+      "name": "firefox-addon-sdk",
+      "downloadLocation": "https://github.com/mozilla/addon-sdk",
+      "filesAnalyzed": false,
+      "licenseConcluded": "MPL-2.0",
+      "licenseDeclared": "MPL-2.0",
+      "copyrightText": "Copyright Mozilla Foundation",
+      "supplier": "Organization: Mozilla Foundation",
+      "versionInfo": "1.17.0",
+      "description": "SDK for Firefox browser extensions"
+    },
+    {
+      "SPDXID": "SPDXRef-Package-agpl-service",
+      "name": "some-agpl-service",
+      "downloadLocation": "https://example.com/agpl-service",
+      "filesAnalyzed": false,
+      "licenseConcluded": "AGPL-3.0-only",
+      "licenseDeclared": "AGPL-3.0-only",
+      "copyrightText": "Copyright (c) 2023 Network Service Corp",
+      "supplier": "Organization: Network Service Corp",
+      "versionInfo": "1.0.0",
+      "description": "Network service with AGPL license"
+    },
+    {
+      "SPDXID": "SPDXRef-Package-custom-internal",
+      "name": "internal-auth-service",
       "downloadLocation": "NOASSERTION",
       "filesAnalyzed": false,
       "licenseConcluded": "Apache-2.0",
-      "licenseDeclared": "Apache-2.0",
+      "licenseDeclared": "Apache-2.0", 
       "copyrightText": "",
       "supplier": "NOASSERTION",
+      "versionInfo": "2.1.0",
+      "description": "Internal authentication microservice"
+    },
+    {
+      "SPDXID": "SPDXRef-Package-suspicious-supplier",
+      "name": "random-utility",
+      "downloadLocation": "https://sketchy-repo.example.com/util",
+      "filesAnalyzed": false,
+      "licenseConcluded": "MIT",
+      "licenseDeclared": "MIT",
+      "copyrightText": "Copyright 2023 Random Developer",
+      "supplier": "Organization: Untrusted Vendor Corp",
+      "versionInfo": "0.1.2",
+      "description": "Utility library from unknown supplier"
+    },
+    {
+      "SPDXID": "SPDXRef-Package-commercial",
+      "name": "enterprise-connector",
+      "downloadLocation": "https://commercial.example.com/download",
+      "filesAnalyzed": false,
+      "licenseConcluded": "LicenseRef-Commercial",
+      "licenseDeclared": "LicenseRef-Commercial",
+      "copyrightText": "Copyright (c) 2023 Commercial Software Inc.",
+      "supplier": "Organization: Commercial Software Inc.",
+      "versionInfo": "3.2.1",
+      "description": "Commercial database connector with proprietary license"
+    },
+    {
+      "SPDXID": "SPDXRef-Package-cc-noncommercial",
+      "name": "research-dataset",
+      "downloadLocation": "https://research.example.edu/dataset",
+      "filesAnalyzed": false,
+      "licenseConcluded": "CC-BY-NC-4.0",
+      "licenseDeclared": "CC-BY-NC-4.0",
+      "copyrightText": "Copyright 2023 University Research Lab",
+      "supplier": "Organization: University Research Lab",
+      "versionInfo": "1.5.0",
+      "description": "Research dataset with non-commercial Creative Commons license"
+    },
+    {
+      "SPDXID": "SPDXRef-Package-sspl-db",
+      "name": "next-gen-database",
+      "downloadLocation": "https://github.com/newdb/nextgen-db",
+      "filesAnalyzed": false,
+      "licenseConcluded": "SSPL-1.0",
+      "licenseDeclared": "SSPL-1.0",
+      "copyrightText": "Copyright 2023 NextGen Database Inc.",
+      "supplier": "Organization: NextGen Database Inc.",
+      "versionInfo": "4.0.1",
+      "description": "Modern database with Server Side Public License"
+    },
+    {
+      "SPDXID": "SPDXRef-Package-complex-license",
+      "name": "dual-licensed-lib",
+      "downloadLocation": "https://github.com/example/dual-lib",
+      "filesAnalyzed": false,
+      "licenseConcluded": "MIT OR GPL-3.0-only",
+      "licenseDeclared": "MIT OR GPL-3.0-only",
+      "copyrightText": "Copyright 2023 Dual License Corp",
+      "supplier": "Organization: Dual License Corp",
+      "versionInfo": "1.8.3",
+      "description": "Library offered under dual license - user can choose"
+    },
+    {
+      "SPDXID": "SPDXRef-Package-bad-dual-license",
+      "name": "problematic-dual-lib",
+      "downloadLocation": "https://github.com/example/bad-dual",
+      "filesAnalyzed": false,
+      "licenseConcluded": "GPL-3.0-only OR MPL-2.0",
+      "licenseDeclared": "GPL-3.0-only OR MPL-2.0", 
+      "copyrightText": "Copyright 2023 Problematic Corp",
+      "supplier": "Organization: Problematic Corp",
+      "versionInfo": "2.1.0",
+      "description": "Library with dual license where both options are disallowed"
+    },
+    {
+      "SPDXID": "SPDXRef-Package-license-with-exception",
+      "name": "gcc-runtime",
+      "downloadLocation": "https://gcc.gnu.org/releases.html",
+      "filesAnalyzed": false,
+      "licenseConcluded": "GPL-3.0-only WITH GCC-exception-3.1",
+      "licenseDeclared": "GPL-3.0-only WITH GCC-exception-3.1",
+      "copyrightText": "Copyright (C) 2023 Free Software Foundation, Inc.",
+      "supplier": "Organization: Free Software Foundation",
+      "versionInfo": "13.2.0",
+      "description": "GCC runtime library with linking exception"
+    },
+    {
+      "SPDXID": "SPDXRef-Package-missing-copyright",
+      "name": "no-copyright-lib",
+      "downloadLocation": "https://github.com/example/nocopyright",
+      "filesAnalyzed": false,
+      "licenseConcluded": "MIT",
+      "licenseDeclared": "MIT",
+      "copyrightText": "NOASSERTION",
+      "supplier": "Organization: Apache Software Foundation",
       "versionInfo": "1.0.0",
-      "description": "Custom internal authentication library.",
-      "homepage": "",
-      "originator": "",
-      "externalRefs": []
+      "description": "Library missing copyright information"
     }
   ]
 }

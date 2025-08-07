@@ -1,77 +1,197 @@
 {
-    "spdxVersion": "SPDX-2.3",
-    "dataLicense": "CC0-1.0",
-    "SPDXID": "SPDXRef-DOCUMENT",
-    "name": "Application SBOM",
-    "documentNamespace": "https://github.com/ SayeemRaza50/sbom/clean-v1.0",
-    "creationInfo": {
-      "created": "2025-08-03T10:00:00Z",
-      "creators": [
-        "Tool: SPDX-Tools-2.3"
-      ],
-      "licenseListVersion": "3.21"
+  "spdxVersion": "SPDX-2.3",
+  "dataLicense": "CC0-1.0",
+  "SPDXID": "SPDXRef-DOCUMENT",
+  "name": "Clean Enterprise Application SBOM",
+  "documentNamespace": "https://enterprise.example.com/sbom/clean-webapp-v1.0",
+  "creationInfo": {
+    "created": "2025-08-07T10:00:00Z",
+    "creators": [
+      "Tool: SPDX-Tools-2.3",
+      "Organization: Enterprise Corp Security Team"
+    ],
+    "licenseListVersion": "3.24"
+  },
+  "packages": [
+    {
+      "SPDXID": "SPDXRef-Package-react",
+      "name": "react",
+      "downloadLocation": "https://github.com/facebook/react",
+      "filesAnalyzed": false,
+      "licenseConcluded": "MIT",
+      "licenseDeclared": "MIT",
+      "copyrightText": "Copyright (c) Meta Platforms, Inc. and its affiliates.",
+      "supplier": "Organization: Meta Platforms, Inc.",
+      "versionInfo": "18.2.0",
+      "description": "A declarative, efficient, and flexible JavaScript library for building user interfaces."
     },
-    "packages": [
-      {
-        "SPDXID": "SPDXRef-Package-clean1",
-        "name": "core-lib",
-        "downloadLocation": "https://acme.com/core-lib",
-        "filesAnalyzed": false,
-        "licenseConcluded": "MIT",
-        "licenseDeclared": "MIT",
-        "copyrightText": "Copyright 2025 Acme Corporation",
-        "supplier": "Organization: Acme Corporation",
-        "versionInfo": "1.0.0",
-        "description": "A core library for applications.",
-        "homepage": "https://acme.com/core-lib",
-        "originator": "",
-        "externalRefs": []
-      },
-      {
-        "SPDXID": "SPDXRef-Package-clean2",
-        "name": "widget-ui",
-        "downloadLocation": "https://widget.com/ui",
-        "filesAnalyzed": false,
-        "licenseConcluded": "Apache-2.0",
-        "licenseDeclared": "Apache-2.0",
-        "copyrightText": "Copyright 2025 Widget Inc",
-        "supplier": "Organization: Widget Inc",
-        "versionInfo": "2.2.1",
-        "description": "A widget-based UI framework.",
-        "homepage": "https://widget.com/ui",
-        "originator": "",
-        "externalRefs": []
-      },
-      {
-        "SPDXID": "SPDXRef-Package-clean3",
-        "name": "example-data-utils",
-        "downloadLocation": "https://example.org/data-utils",
-        "filesAnalyzed": false,
-        "licenseConcluded": "BSD-3-Clause",
-        "licenseDeclared": "BSD-3-Clause",
-        "copyrightText": "Copyright 2025 Example Company",
-        "supplier": "Organization: Example Company",
-        "versionInfo": "3.0.4",
-        "description": "Data utilities package.",
-        "homepage": "https://example.org/data-utils",
-        "originator": "",
-        "externalRefs": []
-      },
-      {
-        "SPDXID": "SPDXRef-Package-clean4",
-        "name": "openlib-math",
-        "downloadLocation": "https://opensourcefoundation.org/openlib-math",
-        "filesAnalyzed": false,
-        "licenseConcluded": "MIT",
-        "licenseDeclared": "MIT",
-        "copyrightText": "Copyright 2025 OpenSource Foundation",
-        "supplier": "Organization: OpenSource Foundation",
-        "versionInfo": "0.8.2",
-        "description": "Open-source math utilities.",
-        "homepage": "https://opensourcefoundation.org/openlib-math",
-        "originator": "",
-        "externalRefs": []
-      }
-    ]
-  }
-  
+    {
+      "SPDXID": "SPDXRef-Package-express",
+      "name": "express",
+      "downloadLocation": "https://github.com/expressjs/express",
+      "filesAnalyzed": false,
+      "licenseConcluded": "MIT",
+      "licenseDeclared": "MIT",
+      "copyrightText": "Copyright (c) 2009-2014 TJ Holowaychuk and contributors",
+      "supplier": "Organization: OpenJS Foundation",
+      "versionInfo": "4.18.2",
+      "description": "Fast, unopinionated, minimalist web framework for Node.js"
+    },
+    {
+      "SPDXID": "SPDXRef-Package-lodash",
+      "name": "lodash",
+      "downloadLocation": "https://github.com/lodash/lodash",
+      "filesAnalyzed": false,
+      "licenseConcluded": "MIT",
+      "licenseDeclared": "MIT",
+      "copyrightText": "Copyright OpenJS Foundation and other contributors",
+      "supplier": "Organization: OpenJS Foundation",
+      "versionInfo": "4.17.21",
+      "description": "A modern JavaScript utility library delivering modularity, performance & extras"
+    },
+    {
+      "SPDXID": "SPDXRef-Package-axios",
+      "name": "axios",
+      "downloadLocation": "https://github.com/axios/axios",
+      "filesAnalyzed": false,
+      "licenseConcluded": "MIT",
+      "licenseDeclared": "MIT",
+      "copyrightText": "Copyright (c) 2014-present Matt Zabriskie",
+      "supplier": "Organization: Individual Developer",
+      "versionInfo": "1.6.2",
+      "description": "Promise based HTTP client for the browser and node.js"
+    },
+    {
+      "SPDXID": "SPDXRef-Package-uuid",
+      "name": "uuid", 
+      "downloadLocation": "https://github.com/uuidjs/uuid",
+      "filesAnalyzed": false,
+      "licenseConcluded": "MIT",
+      "licenseDeclared": "MIT",
+      "copyrightText": "Copyright (c) 2010-2020 Robert Kieffer and other contributors",
+      "supplier": "Organization: Community Maintainer",
+      "versionInfo": "9.0.1",
+      "description": "RFC4122 (v1, v4, and v5) UUIDs"
+    },
+    {
+      "SPDXID": "SPDXRef-Package-moment",
+      "name": "moment",
+      "downloadLocation": "https://github.com/moment/moment",
+      "filesAnalyzed": false,
+      "licenseConcluded": "MIT",
+      "licenseDeclared": "MIT", 
+      "copyrightText": "Copyright (c) JS Foundation and other contributors",
+      "supplier": "Organization: OpenJS Foundation",
+      "versionInfo": "2.29.4",
+      "description": "Parse, validate, manipulate, and display dates"
+    },
+    {
+      "SPDXID": "SPDXRef-Package-bootstrap",
+      "name": "bootstrap",
+      "downloadLocation": "https://github.com/twbs/bootstrap",
+      "filesAnalyzed": false,
+      "licenseConcluded": "MIT",
+      "licenseDeclared": "MIT",
+      "copyrightText": "Copyright (c) 2011-2024 The Bootstrap Authors",
+      "supplier": "Organization: Open Source Contributor",
+      "versionInfo": "5.3.2",
+      "description": "Popular CSS framework for responsive web design"
+    },
+    {
+      "SPDXID": "SPDXRef-Package-core-js",
+      "name": "core-js",
+      "downloadLocation": "https://github.com/zloirock/core-js",
+      "filesAnalyzed": false,
+      "licenseConcluded": "MIT",
+      "licenseDeclared": "MIT",
+      "copyrightText": "Copyright (c) 2014-2024 Denis Pushkarev",
+      "supplier": "Organization: Individual Developer",
+      "versionInfo": "3.34.0",
+      "description": "Standard library for JavaScript"
+    },
+    {
+      "SPDXID": "SPDXRef-Package-chalk",
+      "name": "chalk",
+      "downloadLocation": "https://github.com/chalk/chalk",
+      "filesAnalyzed": false,
+      "licenseConcluded": "MIT",
+      "licenseDeclared": "MIT",
+      "copyrightText": "Copyright (c) Sindre Sorhus (sindresorhus.com)",
+      "supplier": "Organization: Individual Developer",
+      "versionInfo": "5.3.0",
+      "description": "Terminal string styling done right"
+    },
+    {
+      "SPDXID": "SPDXRef-Package-jest",
+      "name": "jest",
+      "downloadLocation": "https://github.com/facebook/jest",
+      "filesAnalyzed": false,
+      "licenseConcluded": "MIT",
+      "licenseDeclared": "MIT",
+      "copyrightText": "Copyright (c) Meta Platforms, Inc. and affiliates.",
+      "supplier": "Organization: Meta Platforms, Inc.",
+      "versionInfo": "29.7.0",
+      "description": "JavaScript testing framework maintained by Meta"
+    },
+    {
+      "SPDXID": "SPDXRef-Package-webpack",
+      "name": "webpack",
+      "downloadLocation": "https://github.com/webpack/webpack",
+      "filesAnalyzed": false,
+      "licenseConcluded": "MIT",
+      "licenseDeclared": "MIT",
+      "copyrightText": "Copyright (c) JS Foundation and other contributors",
+      "supplier": "Organization: OpenJS Foundation",
+      "versionInfo": "5.89.0",
+      "description": "A bundler for javascript and friends"
+    },
+    {
+      "SPDXID": "SPDXRef-Package-typescript",
+      "name": "typescript",
+      "downloadLocation": "https://github.com/Microsoft/TypeScript",
+      "filesAnalyzed": false,
+      "licenseConcluded": "Apache-2.0",
+      "licenseDeclared": "Apache-2.0",
+      "copyrightText": "Copyright (c) Microsoft Corporation. All rights reserved.",
+      "supplier": "Organization: Microsoft Corporation",
+      "versionInfo": "5.3.3",
+      "description": "TypeScript is a language for application scale JavaScript development"
+    },
+    {
+      "SPDXID": "SPDXRef-Package-prettier",
+      "name": "prettier",
+      "downloadLocation": "https://github.com/prettier/prettier",
+      "filesAnalyzed": false,
+      "licenseConcluded": "MIT",
+      "licenseDeclared": "MIT",
+      "copyrightText": "Copyright © James Long and contributors",
+      "supplier": "Organization: Community Maintainer",
+      "versionInfo": "3.1.1",
+      "description": "Prettier is an opinionated code formatter"
+    },
+    {
+      "SPDXID": "SPDXRef-Package-eslint",
+      "name": "eslint",
+      "downloadLocation": "https://github.com/eslint/eslint",
+      "filesAnalyzed": false,
+      "licenseConcluded": "MIT",
+      "licenseDeclared": "MIT",
+      "copyrightText": "Copyright OpenJS Foundation and other contributors",
+      "supplier": "Organization: OpenJS Foundation",
+      "versionInfo": "8.57.0",
+      "description": "An AST-based pattern checker for JavaScript"
+    },
+    {
+      "SPDXID": "SPDXRef-Package-redis-client",
+      "name": "redis",
+      "downloadLocation": "https://github.com/redis/redis-py",
+      "filesAnalyzed": false,
+      "licenseConcluded": "MIT",
+      "licenseDeclared": "MIT",
+      "copyrightText": "Copyright (c) 2012 Andy McCurdy",
+      "supplier": "Organization: Individual Developer", 
+      "versionInfo": "5.0.1",
+      "description": "Python client for Redis key-value store"
+    }
+  ]
+}
